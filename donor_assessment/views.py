@@ -100,6 +100,11 @@ def submit_question(request):
                         if content:
                             try:
                                 structured_data = json.loads(content.strip("```json\n").strip("```"))
+                                # Save the structured data as a JSON file
+                                json_file_name = f"structured_data_{uuid.uuid4().hex}.json"
+                                json_file_path = os.path.join(upload_dir, json_file_name)
+                                with open(json_file_path, "w") as json_file:
+                                    json.dump(structured_data, json_file, indent=4)
                                 return JsonResponse({"message": "File processed successfully!", "data": structured_data})
                             except json.JSONDecodeError as e:
                                 return JsonResponse({"error": f"Error decoding JSON content: {e}"}, status=500)
