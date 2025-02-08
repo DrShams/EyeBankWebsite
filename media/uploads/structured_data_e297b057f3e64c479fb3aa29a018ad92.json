@@ -1,0 +1,82 @@
+[
+    {
+        "electronic_medical_records": {
+            "patient_details": {
+                "name": "Marjorie R Ellis",
+                "age": 68,
+                "medical_history": [
+                    "MASH Cirrhosis",
+                    "Hypertension",
+                    "Generalized Anxiety Disorder (GAD)",
+                    "Major Depressive Disorder (MDD)",
+                    "Recurrent UTIs",
+                    "Acute Respiratory Failure",
+                    "Chronic Lymphedema"
+                ],
+                "hospital_course": [
+                    "Admitted on 10/01/2024",
+                    "Transferred from Holzer due to altered mental status",
+                    "Complicated by sepsis secondary to MRDO Enterobacter UTI",
+                    "Underwent treatment for multi-focal hospital-acquired pneumonia",
+                    "Conditions worsened leading to close to intubation",
+                    "Expired on 10/13/2024"
+                ]
+            },
+            "medications": [
+                "Cholecalciferol 5,000 Units Oral DAILY",
+                "Cyclobenzaprine HCl 5 mg Oral 3 TIMES DAILY AS NEEDED",
+                "Ferrous Sulfate 324 mg Oral EVERY M, W & F DINNER",
+                "Furosemide 20 mg Oral DAILY",
+                "HYDROcodone-Acetaminophen 5-325 MG 1 tablet Oral EVERY 4 HOURS AS NEEDED",
+                "Lactulose 10 GM/15ML 30 mL Oral 2 TIMES DAILY",
+                "Levothyroxine Sodium 25 mcg Oral DAILY BEFORE BREAKFAST",
+                "Melatonin 5 mg Oral DAILY AT BEDTIME AS NEEDED",
+                "Nystatin 100000 UNIT/GM 1 Application Topical AS NEEDED",
+                "Omeprazole 20 mg Oral DAILY",
+                "Rifaximin 550 mg Oral 2 TIMES DAILY",
+                "Sertraline HCl 200 mg Oral DAILY",
+                "Spironolactone 50 mg Oral 2 TIMES DAILY",
+                "Tamsulosin HCl 0.4 mg Oral DAILY"
+            ],
+            "hospital_discharge": "Patient expired on 10/13/2024 after deteriorating clinical status"
+        },
+        "sepsis": {
+            "cause": "Sepsis secondary to hospital-acquired pneumonia and MRDO UTI",
+            "complications": [
+                "Persistent acute multifactorial metabolic encephalopathy",
+                "Altered mental status",
+                "Respiratory failure requiring monitoring"
+            ],
+            "treatment": [
+                "Broad-spectrum antibiotics initiated",
+                "Fluid resuscitation",
+                "Supportive care in ICU"
+            ],
+            "status": "Patient's condition continued to decline despite aggressive treatment"
+        },
+        "blood_transfusion": {
+            "reason": "Severe anemia due to septic state and malnutrition",
+            "hemoglobin_levels": [
+                {
+                    "date": "10/01/2024",
+                    "value": "8.1 g/dL"
+                },
+                {
+                    "date": "10/02/2024",
+                    "value": "7.5 g/dL"
+                },
+                {
+                    "date": "10/03/2024",
+                    "value": "8.1 g/dL"
+                }
+            ],
+            "transfusions": [
+                {
+                    "date": "10/02/2024",
+                    "amount": "2 units of packed red blood cells",
+                    "target_hemoglobin": "> 8 g/dL due to chronic illness and ongoing bleeding risk"
+                }
+            ]
+        }
+    }
+]
