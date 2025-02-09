@@ -121,6 +121,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Specify where Django will collect static files (in production)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'donor_assessment', 'static'),  # Path to your static directory
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
