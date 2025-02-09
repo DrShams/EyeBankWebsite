@@ -1,0 +1,69 @@
+[
+    {
+        "electronic_medical_records": {
+            "patient_details": {
+                "name": "Jeffrey Cochran",
+                "age": 59,
+                "medical_history": [
+                    "Metastatic tonsil squamous cell carcinoma",
+                    "Essential hypertension",
+                    "Other specified hypothyroidism",
+                    "Emphysema",
+                    "Chronic constipation"
+                ],
+                "hospital_course": [
+                    "Admitted on 09/16/2024",
+                    "Found to have sepsis secondary to right lower lobe pneumonia and empyema",
+                    "Underwent bronchoscopy with aspiration, right thoracotomy, pleurectomy, and right lower lobectomy on 09/17/2024",
+                    "Chest tubes placed for drainage",
+                    "Discharged on 10/15/2024"
+                ]
+            },
+            "medications": [
+                "Cefepime (IV)",
+                "Metronidazole (IV)",
+                "Lisinopril 10 mg daily",
+                "Levothyroxine 50 mcg daily",
+                "Vitamin E 90 mg daily",
+                "Norco for pain management",
+                "Toradol for pain management"
+            ],
+            "hospital_discharge": "Discharged on 10/15/2024 after treatment for empyema and pneumonia"
+        },
+        "sepsis": {
+            "cause": "Sepsis due to pneumonia and empyema",
+            "complications": [
+                "Increased white blood cell count",
+                "Persistent fever",
+                "Need for fluid management",
+                "Concerns regarding aspiration pneumonia"
+            ],
+            "treatment": [
+                "Initiated on IV antibiotics (Cefepime and Metronidazole)",
+                "Fluid resuscitation",
+                "Ongoing monitoring of lab values"
+            ],
+            "status": "Improving but with close monitoring required"
+        },
+        "blood_transfusion": {
+            "reason": "Normocytic anemia secondary to acute blood loss from lung abscess",
+            "hemoglobin_levels": [
+                {
+                    "date": "09/20/2024",
+                    "value": "8.4 g/dL"
+                },
+                {
+                    "date": "09/21/2024",
+                    "value": "7.9 g/dL"
+                }
+            ],
+            "transfusions": [
+                {
+                    "date": "10/03/2024",
+                    "amount": "1 unit of packed red blood cells",
+                    "target_hemoglobin": "> 7 g/dL due to ongoing bleeding"
+                }
+            ]
+        }
+    }
+]
