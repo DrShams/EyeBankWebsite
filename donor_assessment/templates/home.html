@@ -58,6 +58,7 @@
 
     <!-- Loading spinner and status messages -->
     <div id="status-message"></div>
+    <div id="loading-spinner" style="display: none;">Loading...</div>
 
     <!-- Buttons -->
     <button onclick="submitQuestion()">Submit</button>
@@ -263,7 +264,7 @@
         .then(data => {
             if (data.message) {
                 statusMessage.innerHTML = "File and question submitted successfully!";
-                //alert("File and question submitted successfully!");
+                alert("File and question submitted successfully!");
             } else {
                 statusMessage.innerHTML = `Error: ${data.error}`;
                 alert("Error: " + data.error);
