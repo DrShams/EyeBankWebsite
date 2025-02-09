@@ -10,7 +10,4 @@ urlpatterns = [
     path("get_prompt/", get_prompt, name="get_prompt"),
     path('submit_question/', submit_question, name='submit_question'),
     path('get-latest-json/', get_latest_json, name='get_latest_json'),
-]
-
-if settings.DEBUG is False:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
