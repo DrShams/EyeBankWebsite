@@ -56,6 +56,10 @@
     </div>
     <div id="prompt-content"></div>
 
+    <!-- Loading spinner and status messages -->
+    <div id="status-message"></div>
+    <div id="loading-spinner" style="display: none;">Loading...</div>
+
     <!-- Buttons -->
     <button onclick="submitQuestion()">Submit</button>
 </main>
@@ -226,6 +230,12 @@
     function submitQuestion() {
         let fileInput = document.getElementById("file-upload");
         let selectedQuestion = document.getElementById("questions").value;
+        let statusMessage = document.getElementById("status-message");
+        let loadingSpinner = document.getElementById("loading-spinner");
+
+        // Reset status message and hide spinner
+        statusMessage.innerHTML = "";
+        loadingSpinner.style.display = "none";
 
         if (fileInput.files.length === 0) {
             alert("Please select a file to upload.");
@@ -236,6 +246,11 @@
             alert("Please select a question before submitting.");
             return;
         }
+
+        // Notify user that the process has started
+        statusMessage.innerHTML = "Uploading file and submitting question...";
+        loadingSpinner.style.display = "block"; // Show spinner
+
         let formData = new FormData();
         formData.append("donor_file", fileInput.files[0]);  // File data
         formData.append("prompt_id", selectedQuestion); // Question data
@@ -248,12 +263,19 @@
         .then(response => response.json())
         .then(data => {
             if (data.message) {
+                statusMessage.innerHTML = "File and question submitted successfully!";
                 alert("File and question submitted successfully!");
             } else {
+                statusMessage.innerHTML = `Error: ${data.error}`;
                 alert("Error: " + data.error);
             }
         })
-        .catch(error => console.error("Error:", error));
+        .catch(error => {
+            loadingSpinner.style.display = "none"; // Hide spinner in case of error
+            console.error("Error:", error);
+            statusMessage.innerHTML = "An error occurred while submitting your data.";
+            alert("Error: An error occurred while submitting your data.");
+        });
     }
 
     // Function to get CSRF token if using Django
