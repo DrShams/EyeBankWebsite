@@ -3,15 +3,18 @@ import uuid
 import json
 import requests
 import yaml
+import glob
 
 from django.shortcuts import render
 from django.http import JsonResponse
-from .forms import UploadFileForm
 from django.conf import settings
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from .forms import UploadFileForm
 from .models import UploadedFile
 from PyPDF2 import PdfReader
+
+UPLOADS_DIR = "EyeBankWebsite/media/uploads/"
 
 def home(request):
     return render(request, "home.html")
@@ -148,3 +151,16 @@ def send_request(api_key, document_content, prompt):
 
     response = requests.post(url, headers=headers, json=data)
     return response
+
+def get_latest_json(request):
+    json_dir = os.path.join(settings.MEDIA_ROOT, 'uploads')
+    json_files = sorted(glob.glob(os.path.join(json_dir, 'structured_data_*.json')), key=os.path.getmtime, reverse=True)
+
+    if not json_files:
+        return JsonResponse({"error": "No JSON files found"}, status=404)
+
+    with open(json_files[0], 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Ensure the data is serializable and set `safe=False` if it's a list
+    return JsonResponse(data, safe=isinstance(data, dict))

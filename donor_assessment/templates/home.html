@@ -5,148 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lion's Eye Bank - Donor Assessment</title>
-    <!--<link rel="stylesheet" href="https://donatesight.org/css/output.css?t=1737465305">  UNCOMMENT -->
-
-    <style>
-        /* General Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        header {
-            background-color: #004d61;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        header img {
-            height: 60px;
-            margin-right: 20px;
-        }
-
-        header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        nav {
-            background-color: #007b8a;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav button {
-            background-color: #ffffff;
-            color: #007b8a;
-            border: none;
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        nav button:hover {
-            background-color: #005a6b;
-            color: white;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .upload-section, .question-section {
-            margin-top: 20px;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input[type="file"], textarea {
-            padding: 10px;
-            width: 100%;
-            max-width: 500px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 2px solid #ccc;
-        }
-
-        button {
-            padding: 10px 15px;
-            background-color: #004d61;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #003d50;
-        }
-
-        .results-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        .results-table th, .results-table td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
-
-        .results-table th {
-            background-color: #004d61;
-            color: white;
-        }
-
-        footer {
-            background-color: #004d61;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .link {
-            color: blue;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .link:hover {
-            color: #0202cd;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #007b8a;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
 <!-- Header -->
@@ -200,115 +60,12 @@
     <button onclick="submitQuestion()">Submit</button>
 </main>
 
-
-
 <!-- Results Page -->
 <main id="results-page" style="display: none;">
-
-    <!-- Highlighted Important Criteria -->
-    <div class="important-criteria">
-        <h3>Most Important Criteria</h3>
-        <ul>
-            <li><b>Blood Culture:</b> Positive. Indicates potential systemic infection.</li>
-            <li><b>White Blood Cells (WBC):</b> Elevated. Suggests inflammatory response.</li>
-            <li><b>Temperature (Temps):</b> High (38.5°C). Sign of possible infection.</li>
-        </ul>
+    <h3>Latest Donor Assessment Results</h3>
+    <div id="results-content">
+        <button onclick="fetchLatestResults(); showPage('results')">Results</button>
     </div>
-
-    <!-- Detailed Results Table -->
-    <h3>Detailed Results</h3>
-    <table>
-        <thead>
-        <tr>
-            <th>Criteria</th>
-            <th>Result</th>
-            <th>Notes</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td onclick = "showResultDetails('blood-culture-criterion')" class = "link">Blood Culture</td>
-            <td>Positive</td>
-            <td>Indicates systemic infection requiring immediate attention.</td>
-        </tr>
-        <tr>
-            <td onclick = "showResultDetails('white-blood-cells-criterion')" class = "link">White Blood Cells (WBC)</td>
-            <td>Elevated</td>
-            <td>Strong indicator of inflammation or infection.</td>
-        </tr>
-        <tr>
-            <td onclick = "showResultDetails('temperature-criterion')" class = "link">Temperature (Temps)</td>
-            <td>High</td>
-            <td>Clinical evidence of infection.</td>
-        </tr>
-        <tr>
-            <td onclick = "showResultDetails('low-blood-pressure-criterion')" class = "link">Low Blood Pressure</td>
-            <td>Normal</td>
-            <td>No signs of hypotension.</td>
-        </tr>
-        <tr>
-            <td onclick = "showResultDetails('unexplained-hypoxia-criterion')" class = "link">Unexplained Hypoxia</td>
-            <td>Normal</td>
-            <td>Oxygen levels are stable.</td>
-        </tr>
-        </tbody>
-    </table>
-
-    <div id = "blood-culture-criterion" style="display: none;" criterion-result >
-        <ul>
-            <li>Blood culture 1</li>
-            <li>Blood culture 2</li>
-            <li>Blood culture 3</li>
-        </ul>
-    </div>
-
-    <div id = "white-blood-cells-criterion" style="display: none;" criterion-result >
-        <h3>White Blood Cells Criterion</h3>
-        <table>
-            <tbody>
-            <tr>
-                <td>124124</td>
-                <td>C124124</td>
-            </tr>
-            <tr>
-                <td>124</td>
-                <td>dfgdfghdfhdfh</td>
-            </tr>
-            <tr>
-                <td>124124</td>
-                <td>erwetwetwet</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id = "temperature-criterion" style="display: none;" criterion-result >
-        <ul>
-            <li>T 40</li>
-            <li>T 41</li>
-            <li>T 42</li>
-            <li>T 43</li>
-        </ul>
-    </div>
-
-    <div id = "low-blood-pressure-criterion" style="display: none;" criterion-result >
-        <ul>
-            <li>VERY LOW</li>
-            <li>TOO LOW</li>
-
-        </ul>
-    </div>
-
-    <div id = "unexplained-hypoxia-criterion" style="display: none;" criterion-result >
-        <ul>
-            <li>SOME DATA</li>
-        </ul>
-    </div>
-
-    <!-- Preview and Download Button -->
-    <button class="btn-primary" onclick="previewDetails()">Preview Detailed Results</button>
-    <button class="btn-primary" onclick="downloadReport()">Download Full Report</button>
-</main>
 </main>
 
 <!-- Login Page -->
@@ -353,7 +110,7 @@
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 container mx-auto">
         <div>
             <div class="bg-white p-2 rounded-lg max-w-sm">
-                <img src="https://donatesight.org/img/logos/ebaa-accredited.png" class="w-full h-auto object-scale-down">
+                <img src="{% static 'images/ebaa-accredited.webp' %}" class="w-full h-auto object-scale-down">
             </div>
         </div>
         <div class="space-y-10">
@@ -434,7 +191,6 @@
 <script>
 
 	function showResultDetails(idElement) {
-
 		const results = document.querySelectorAll('div[criterion-result]');
 		results.forEach(result => {
 			console.log(result)
@@ -506,10 +262,6 @@
         return csrfToken ? csrfToken.value : "";
     }
 
-    /*function getCSRFToken() {
-        return document.querySelector("[name=csrfmiddlewaretoken]").value;
-    }*/
-
     function loadPrompt() {
         let selectedPrompt = document.getElementById("questions").value;
 
@@ -524,6 +276,98 @@
         })
         .catch(error => console.error(error));
     }
+    async function fetchLatestResults() {
+        const response = await fetch('/get-latest-json');
+        const data = await response.json();
+
+        if (!data) {
+            document.getElementById("results-content").innerHTML = "<p>No data available.</p>";
+            return;
+        }
+        // Check if JSON is an array and use the first object inside
+        const processedData = Array.isArray(data) ? data[0] : data;
+
+        // Convert JSON to table format
+        const tableHTML = generateTableFromJSON(processedData);
+        document.getElementById("results-content").innerHTML = tableHTML;
+    }
+
+    function generateTableFromJSON(obj) {
+        let table = "<table border='1' style='border-collapse: collapse; width: 100%;'>";
+        table += "<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>";
+
+        for (const [key, value] of Object.entries(obj)) {
+            table += `<tr><td><b>${key}</b></td><td>${formatValue(value)}</td></tr>`;
+        }
+
+        table += "</tbody></table>";
+        return table;
+    }
+
+    function formatValue(value) {
+        if (typeof value === "object") {
+            if (Array.isArray(value)) {
+                // Check if array contains objects
+                if (value.length > 0 && typeof value[0] === "object") {
+                    return generateArrayTable(value); // Convert array of objects into table
+                } else {
+                    return `<ul>${value.map(v => `<li>${v}</li>`).join("")}</ul>`; // Simple list for plain values
+                }
+            } else {
+                return generateTableFromJSON(value); // Recursively create a table for nested objects
+            }
+        }
+        return value; // Return simple values directly
+    }
+
+    function generateArrayTable(array) {
+        if (array.length === 0) return "<p>No data</p>";
+
+        // Extract table headers from object keys
+        const headers = Object.keys(array[0]);
+        let table = "<table border='1' style='border-collapse: collapse; width: 100%;'>";
+        
+        // Generate headers
+        table += "<thead><tr>";
+        headers.forEach(header => {
+            table += `<th>${header}</th>`;
+        });
+        table += "</tr></thead><tbody>";
+
+        // Generate rows
+        array.forEach(obj => {
+            table += "<tr>";
+            headers.forEach(header => {
+                table += `<td>${obj[header]}</td>`;
+            });
+            table += "</tr>";
+        });
+
+        table += "</tbody></table>";
+        return table;
+    }
+
+
+
+
+    function formatObject(obj) {
+        let formattedText = "<ul>";
+        for (const [key, value] of Object.entries(obj)) {
+            if (typeof value === "object") {
+                formattedText += `<li><b>${key}:</b> ${formatObject(value)}</li>`;
+            } else {
+                formattedText += `<li><b>${key}:</b> ${value}</li>`;
+            }
+        }
+        formattedText += "</ul>";
+        return formattedText;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === "#results") {
+            fetchLatestResults();
+        }
+    });
 </script>
 </body>
 </html>
