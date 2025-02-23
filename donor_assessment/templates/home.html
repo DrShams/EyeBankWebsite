@@ -264,8 +264,11 @@
         .then(data => {
             if (data.message) {
                 statusMessage.innerHTML = "File and question submitted successfully!";
-                fetchLatestResults();
+                //fetchLatestResults();
                 //alert("File and question submitted successfully!");
+                //window.location.href = "/get-latest-json/"; // Redirect after submission
+                fetchLatestResults();
+                showPage('results');
             } else {
                 statusMessage.innerHTML = `Error: ${data.error}`;
                 alert("Error: " + data.error);
