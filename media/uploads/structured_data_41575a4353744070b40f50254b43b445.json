@@ -1,0 +1,77 @@
+[
+    {
+        "electronic_medical_records": {
+            "patient_details": {
+                "name": "Marjorie R Ellis",
+                "age": 68,
+                "medical_history": [
+                    "MASH Cirrhosis",
+                    "Recurrent UTI",
+                    "Hypertension",
+                    "Generalized Anxiety Disorder",
+                    "Major Depressive Disorder",
+                    "Obesity",
+                    "Chronic lymphedema"
+                ],
+                "hospital_course": [
+                    "Admitted on 10/01/2024 from Holzer Medical Center",
+                    "Presented with altered mental status and sepsis",
+                    "Received broad-spectrum antibiotics: meropenem and cefepime",
+                    "Transferred to MICU for respiratory support and monitoring",
+                    "Expired on 10/13/2024"
+                ]
+            },
+            "medications": [
+                "Cefepime",
+                "Vancomycin",
+                "Meropenem",
+                "Lactulose",
+                "Rifaximin",
+                "Levothyroxine",
+                "Sertraline",
+                "Spironolactone",
+                "Tamsulosin"
+            ],
+            "hospital_discharge": "Expired on 10/13/2024 after complications from sepsis and multi-organ failure"
+        },
+        "sepsis": {
+            "cause": "Sepsis secondary to multi-drug resistant urinary tract infection and hospital-acquired pneumonia",
+            "complications": [
+                "Persistent acute multifactorial metabolic encephalopathy",
+                "Acute respiratory failure",
+                "Increased oxygen requirements",
+                "Altered mental status"
+            ],
+            "treatment": [
+                "Broad-spectrum antibiotics initiated on admission",
+                "Fluid management and monitoring",
+                "Goals of care discussions with family"
+            ],
+            "status": "Condition worsened despite treatment leading to death"
+        },
+        "blood_transfusion": {
+            "reason": "Anemia related to chronic illness, potential bleeding related to cirrhosis",
+            "hemoglobin_levels": [
+                {
+                    "date": "10/03/2024",
+                    "value": "7.5 g/dL"
+                },
+                {
+                    "date": "10/05/2024",
+                    "value": "8.1 g/dL"
+                },
+                {
+                    "date": "10/06/2024",
+                    "value": "6.2 g/dL"
+                }
+            ],
+            "transfusions": [
+                {
+                    "date": "10/02/2024",
+                    "amount": "1 unit of packed red blood cells",
+                    "target_hemoglobin": "> 8 g/dL due to critical illness"
+                }
+            ]
+        }
+    }
+]
