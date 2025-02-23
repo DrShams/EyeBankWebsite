@@ -264,7 +264,8 @@
         .then(data => {
             if (data.message) {
                 statusMessage.innerHTML = "File and question submitted successfully!";
-                alert("File and question submitted successfully!");
+                fetchLatestResults();
+                //alert("File and question submitted successfully!");
             } else {
                 statusMessage.innerHTML = `Error: ${data.error}`;
                 alert("Error: " + data.error);

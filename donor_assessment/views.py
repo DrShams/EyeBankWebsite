@@ -64,7 +64,8 @@ def submit_question(request):
 
             # Generate a unique filename
             file_extension = uploaded_file.name.split(".")[-1]
-            file_name = f"donor_record_{uuid.uuid4().hex}.{file_extension}"
+            uniqueuuid = uuid.uuid4()
+            file_name = f"donor_record_{uniqueuuid.hex}.{file_extension}"
             file_path = os.path.join(upload_dir, file_name)
 
             # Save the file
@@ -104,7 +105,7 @@ def submit_question(request):
                             try:
                                 structured_data = json.loads(content.strip("```json\n").strip("```"))
                                 # Save the structured data as a JSON file
-                                json_file_name = f"structured_data_{uuid.uuid4().hex}.json"
+                                json_file_name = f"structured_data_{uniqueuuid.hex}.json"
                                 json_file_path = os.path.join(upload_dir, json_file_name)
                                 with open(json_file_path, "w") as json_file:
                                     json.dump(structured_data, json_file, indent=4)
@@ -124,6 +125,7 @@ def submit_question(request):
     return JsonResponse({"error": "Invalid request"}, status=400)
 
 def extract_text_from_pdf(pdf_path):
+    """This function extract pdf content and transform it into text"""
     try:
         reader = PdfReader(pdf_path)
         text = ""
