@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-EyeBankWebsite is a web-based application developed using Django that enables users to upload donor medical records and retrieve AI-analyzed data for assessment. The platform is designed to streamline the donor evaluation process by leveraging ChatGPT’s analytical capabilities to extract and interpret medical information.
+EyeBankWebsite is a web-based application developed using Django that enables users to upload donor medical records and retrieve AI-analyzed data for assessment. Leveraging the power of ChatGPT, the platform helps medical professionals streamline the donor evaluation process by extracting and interpreting critical medical information.
 
 ## Key Features
 
 ### 1. Donor Record Upload
-- Supports only `.pdf` files.  
-- Secure and efficient file handling for medical document processing.  
+- Currently supports only .pdf files, with plans for future support of additional file formats.
+- Secure and efficient file handling to comply with medical data regulations (e.g., HIPAA).
 
 ### 2. AI-Based Medical Data Analysis
 - Uploaded medical records are analyzed by ChatGPT.  
@@ -16,7 +16,8 @@ EyeBankWebsite is a web-based application developed using Django that enables us
 - Focuses on key medical aspects such as:  
   - Electronic Medical Records (EMR)  
   - Sepsis Detection  
-  - Blood Transfusion Compatibility  
+  - Blood Transfusion Compatibility
+- PDF Handling: The platform processes uploaded .pdf files using a combination of Python libraries like pdfplumber to extract text and medical information for further analysis.
 
 ### 3. Prompt-Based Question Retrieval
 - Users select predefined prompts stored in `promptX.txt` files.  
@@ -30,7 +31,7 @@ EyeBankWebsite is a web-based application developed using Django that enables us
 
 - **Backend:** Django (Python)  
 - **Frontend:** HTML, CSS, JavaScript  
-- **Database:** PostgreSQL/MySQL (TBD based on requirements)  
+- **Database:** SQLite(currently), PostgreSQL(preferred)
 - **File Handling:** PDF processing for medical record extraction  
 
 ## Project Objective
@@ -84,18 +85,31 @@ In Django, the architecture follows a Model-View-Controller (MVC) pattern, which
 - The **Template** is responsible for rendering the UI and presenting the data to the user.
 - Django separates the UI logic (HTML, CSS, JavaScript) from the business logic, with templates stored in the **Templates** folder.
 
-### Django's Adaptation (MTV)
-While Django follows the MVC pattern in terms of its core components, it adapts the terminology slightly:
-- **Model** in Django is still the database schema.
-- **Template** in Django represents what would traditionally be the **View** in MVC (the user interface).
-- **View** in Django takes on a role more akin to the **Controller**, processing the request and returning the response.
-
 ### Hybrid Architecture with AI Integration
-This architecture also incorporates an AI API layer, which introduces a hybrid element combining traditional Django MVC with API-driven design. Here’s the breakdown:
-- **Traditional Web MVC**: Django handles the web interface and logic in the traditional MVC manner.
-- **API-Driven Architecture**: The AI integration introduces an API layer to interact with external services like ChatGPT or other AI tools.
+The AI API layer adds flexibility, enabling EyeBankWebsite to incorporate cutting-edge medical analysis capabilities, such as detecting sepsis or assessing blood transfusion compatibility, making it scalable to future AI advancements.
 
-This combination provides a powerful, scalable architecture for both web-based and AI-driven functionality.
+## Token Consumption by ChatGPT
+
+When interacting with ChatGPT, it’s important to understand how tokens are consumed during processing. Tokens are units of text that the model uses to understand and generate language. Both the input (what you send) and the output (what the model returns) consume tokens.
+
+For larger documents, token limits can be managed by chunking data or summarizing large inputs before sending them to ChatGPT for analysis. This ensures efficient usage of tokens and prevents hitting API limits.
+
+### Token Breakdown for Simple Text
+For a simple text, like "Hello", the token consumption is minimal:
+![Architecture](_project_description/AIConsumptionSimpleHello.jpg)
+- **Input**: 13 tokens
+- **Output**: 9 tokens
+
+### Token Breakdown for Large Inputs (e.g., PDF Files)
+When processing larger inputs, such as extracting text from PDF files, the token count can increase significantly:
+![Architecture](_project_description/AIConsumptionPDFiles.jpg)
+- **Input**: 47,008 tokens (for a large PDF)
+- **Output**: 586 tokens
+
+This token consumption is influenced by factors such as the size of the input, the complexity of the content, and how much output is generated. For large files or complex data, token consumption can grow, which may impact costs and performance.
+
+### Token Limits
+Each API call to ChatGPT has a token limit, which is the maximum number of tokens that can be processed in a single request (input + output). It’s essential to keep this in mind when submitting large documents or requests for AI processing.
 
 ## File Structure
 
