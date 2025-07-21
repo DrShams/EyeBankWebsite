@@ -1,0 +1,45 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction in 04/2024",
+                    "History of diabetes mellitus",
+                    "Chronic obstructive pulmonary disease",
+                    "History of transient ischemic attacks",
+                    "History of bipolar disorder"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI and cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention and Impella insertion followed by removal.",
+                    "Patient remains on mechanical ventilation and medications for heart failure and rhythm control."
+                ]
+            },
+            "Medications": [
+                "IV furosemide for diuresis",
+                "Amiodarone IV for atrial fibrillation",
+                "Milrinone IV for cardiac support",
+                "Insulin for blood glucose management",
+                "Piperacillin-tazobactam for infection prophylaxis"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after a lengthy intensive care course."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (high)",
+                "BloodCulture": "No organism isolated, negative MRSA PCR.",
+                "Temperature": "Persistently low-grade fever noted.",
+                "LowBloodPressure": "MAP maintained above 60 with vasopressors.",
+                "UnexplainedHypoxia": "Desaturation episodes when supine."
+            },
+            "ClinicalNotes": "Febrile, leukocytosis concerning for infection without a known source; under evaluation."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0",
+            "TransfusionEvents": "Received multiple units of packed red blood cells due to anemia during hospitalization."
+        }
+    }
+]

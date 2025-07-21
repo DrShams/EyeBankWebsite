@@ -1,0 +1,45 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Diabetes mellitus",
+                    "Bipolar disorder",
+                    "C. difficile infection"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent multiple PCI procedures including Impella insertion and removal.",
+                    "Extubated on 09/28/2024 but re-intubated the same day due to airway protection issues.",
+                    "Continued to remain critically ill with fluctuating hemodynamics and respiratory failure."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV for atrial fibrillation",
+                "Milrinone IV for cardiac output support",
+                "Zosyn IV for antibiotic coverage",
+                "Insulin for blood glucose control",
+                "Midodrine for blood pressure support"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024, but patient's prognosis remained guarded following severe complications."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2",
+                "BloodCulture": "Negative for known pathogens.",
+                "Temperature": "Ranges around 98.4\u00b0F (36.9\u00b0C) with occasional spikes.",
+                "LowBloodPressure": "Histories of hypotension reported.",
+                "UnexplainedHypoxia": "Observed desaturation during positioning for MRI."
+            },
+            "ClinicalNotes": "Patient exhibited signs of infection with leukocytosis but no source identified; continued monitoring for septic complications."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "Hemoglobin was noted at 7.4, indicating transfusion needs.",
+            "TransfusionEvents": "Received blood transfusions to maintain hemoglobin levels above 8 during hospitalization."
+        }
+    }
+]

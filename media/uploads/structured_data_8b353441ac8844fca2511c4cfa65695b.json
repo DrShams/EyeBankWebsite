@@ -1,0 +1,48 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary Artery Disease",
+                    "Myocardial Infarction",
+                    "History of PCI",
+                    "Diabetes Mellitus",
+                    "Bipolar Disorder",
+                    "Congestive Heart Failure",
+                    "Previous Intubation"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 with NSTEMI complicated by cardiogenic shock.",
+                    "Underwent multiple PCI procedures and was supported by Impella.",
+                    "Patient remains intubated and on mechanical ventilation with ongoing critical care."
+                ]
+            },
+            "Medications": [
+                "IV Amiodarone",
+                "Milrinone infusion",
+                "Insulin (Glargine and Lispro)",
+                "Ticagrelor",
+                "Aspirin",
+                "Dapagliflozin",
+                "Spironolactone"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H)",
+                "BloodCulture": "Pending, cultures negative so far.",
+                "Temperature": "99.8 \u00b0F",
+                "LowBloodPressure": "SBP 70-100s",
+                "UnexplainedHypoxia": "Desaturation noted when laid flat."
+            },
+            "ClinicalNotes": "Fever and leukocytosis observed without a known source. Concerns for infection and sepsis."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 (L)",
+            "TransfusionEvents": "Blood transfusion administered to maintain hemoglobin above 8."
+        }
+    }
+]

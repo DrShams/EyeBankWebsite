@@ -1,0 +1,48 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary Artery Disease (CAD)",
+                    "Myocardial Infarction (MI) in April 2024",
+                    "Diabetes Mellitus",
+                    "History of bipolar disorder",
+                    "Severe obesity (BMI 32 kg/m\u00b2)",
+                    "C. difficile infection",
+                    "Acute kidney injury"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 with NSTEMI and cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention and supported with Impella.",
+                    "Extubated but re-intubated due to respiratory failure.",
+                    "Developed leukocytosis and fevers, concerning for infection.",
+                    "Family meeting held to discuss goals of care."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV",
+                "Milrinone IV",
+                "Ticagrelor 90 mg bid",
+                "Aspirin 81 mg daily",
+                "Enoxaparin 40 mg daily for DVT prophylaxis"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after a prolonged ICU stay."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2",
+                "BloodCulture": "No organisms isolated.",
+                "Temperature": "Not specified.",
+                "LowBloodPressure": "MAP slightly improved with vasopressors.",
+                "UnexplainedHypoxia": "Requires mechanical ventilation."
+            },
+            "ClinicalNotes": "Leukocytosis and fevers prompting concern for possible sepsis; cultures negative to date."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 on 10/04/2024",
+            "TransfusionEvents": "One unit of packed red blood cells administered to maintain hemoglobin above 8."
+        }
+    }
+]

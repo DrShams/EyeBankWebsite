@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Cardiovascular disease",
+                    "Diabetes mellitus",
+                    "Bipolar disorder",
+                    "History of C. difficile infection",
+                    "Hypertension",
+                    "Pressure injuries"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 with NSTEMI and cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention (PCI) on 09/19/2024.",
+                    "Impella insertion on 09/21/2024 for support.",
+                    "Impella removed on 09/27/2024.",
+                    "Extubated on 09/28/2024 but re-intubated same day due to secretion management issues.",
+                    "Patient remains critically ill on mechanical ventilation during the hospital stay."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV for arrhythmias",
+                "Milrinone IV to support cardiac output",
+                "Furosemide IV for diuresis",
+                "Ticagrelor and Aspirin for dual antiplatelet therapy"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 with a guarded prognosis."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "Elevated at 17.2 on 10/04/2024",
+                "BloodCulture": "Cultures negative, but clinical suspicion of infection due to leukocytosis.",
+                "Temperature": "Variations with mild fever noted.",
+                "LowBloodPressure": "Hypotensive during episodes requiring vasopressor support.",
+                "UnexplainedHypoxia": "Desaturation observed during attempts to lay flat."
+            },
+            "ClinicalNotes": "Clinical indicators suggest concern for infection; however, no organism isolated on cultures."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 g/dL on 10/04/2024, receiving transfusions to maintain levels.",
+            "TransfusionEvents": "Multiple transfusions administered during hospitalization to maintain hemoglobin levels due to anemia."
+        }
+    }
+]

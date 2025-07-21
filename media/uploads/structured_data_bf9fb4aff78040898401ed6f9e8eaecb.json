@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Bipolar disorder",
+                    "Type 1 diabetes mellitus",
+                    "Chronic anticoagulation therapy",
+                    "History of C. difficile infection"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent emergent PTCA and subsequent Impella insertion.",
+                    "Extubated but re-intubated same day due to airway protection.",
+                    "Continuing discussion of goals of care with family amidst guarded prognosis."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV for atrial fibrillation",
+                "Milrinone IV for heart failure",
+                "Insulin for blood sugar control",
+                "Furosemide IV for diuresis",
+                "Ticagrelor and Aspirin for post-PCI management"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after stabilizing, but with ongoing health concerns."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H) as of 10/04/2024",
+                "BloodCulture": "No organism isolated on current cultures.",
+                "Temperature": "98.4 \u00b0F recorded.",
+                "LowBloodPressure": "BP 106/52 on 10/04/2024.",
+                "UnexplainedHypoxia": "Patient displayed episodes of desaturation."
+            },
+            "ClinicalNotes": "Suspicion of infection without a known source; ongoing monitoring for sepsis."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 (L) as of 10/04/2024; previously transfused during care.",
+            "TransfusionEvents": "Transfused with packed red blood cells to maintain hemoglobin greater than 8."
+        }
+    }
+]

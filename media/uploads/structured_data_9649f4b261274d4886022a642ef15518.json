@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Diabetes mellitus",
+                    "Bipolar disorder",
+                    "History of C. difficile infection",
+                    "Hypertension"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention and Impella insertion.",
+                    "Re-intubated for airway protection due to poor secretion management.",
+                    "Continued to experience complications including leukocytosis and fever, being closely monitored."
+                ]
+            },
+            "Medications": [
+                "IV Amiodarone",
+                "Milrinone infusion",
+                "Dual antiplatelet therapy with Aspirin and Ticagrelor",
+                "Furosemide for diuresis",
+                "Insulin for blood sugar control"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (high)",
+                "BloodCulture": "Contaminant; no organisms isolated",
+                "Temperature": "Not documented",
+                "LowBloodPressure": "Not specified",
+                "UnexplainedHypoxia": "Occurred during transport for MRI"
+            },
+            "ClinicalNotes": "Leukocytosis raised concerns for infection; awaiting further lab results."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 (low) as of 10/04/2024",
+            "TransfusionEvents": "One unit of packed cells administered to maintain hemoglobin >8."
+        }
+    }
+]

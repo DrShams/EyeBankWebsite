@@ -1,0 +1,51 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Marjorie R Ellis",
+                "Age": 68,
+                "MedicalHistory": [
+                    "MASH Cirrhosis",
+                    "Hypertension",
+                    "GAD",
+                    "Major Depressive Disorder",
+                    "Obesity",
+                    "Chronic Lymphedema",
+                    "Recurrent UTIs"
+                ],
+                "HospitalCourse": [
+                    "Patient was transferred from Holzer with altered mental status, found to have sepsis secondary to MRDO UTI and hospital-acquired pneumonia.",
+                    "Hospital course complicated by persistent acute multifactorial metabolic encephalopathy, volume overload, malnutrition, and acute respiratory failure.",
+                    "Patient transitioned to DNR-CC and expired on 10/13/2024."
+                ]
+            },
+            "Medications": [
+                "Cefepime",
+                "Vancomycin",
+                "Meropenem",
+                "Lactulose",
+                "Rifaximin",
+                "Levothyroxine",
+                "Sertraline",
+                "Furosemide",
+                "Spironolactone",
+                "Tamsulosin"
+            ],
+            "HospitalDischarge": "Deceased on 10/13/2024 due to sepsis and multiple organ failure."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "2.97",
+                "BloodCulture": "Pending results",
+                "Temperature": "Fever to 101.4\u00b0F",
+                "LowBloodPressure": "Not recorded",
+                "UnexplainedHypoxia": "Respiratory rate increased to 40; required oxygen support"
+            },
+            "ClinicalNotes": "Patient's condition worsened despite broad-spectrum antibiotic therapy indicative of severe sepsis."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "7.5 on 10/04/2024",
+            "TransfusionEvents": "No blood transfusions were documented during this hospitalization."
+        }
+    }
+]

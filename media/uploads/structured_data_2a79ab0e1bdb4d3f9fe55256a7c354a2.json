@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Gregory L. Triplett",
+                "Age": 64,
+                "MedicalHistory": [
+                    "HFmrEF (41%)",
+                    "Hypertension (HTN)",
+                    "Chronic obstructive pulmonary disease (COPD)",
+                    "Anemia",
+                    "Alcohol use disorder (ETOH abuse)",
+                    "Tobacco use disorder"
+                ],
+                "HospitalCourse": [
+                    "Presented after a fall with significant weakness and was found lying on the ground for two days.",
+                    "Admitted with new diagnosis of alcoholic cirrhosis and required paracentesis due to ascites.",
+                    "Initial labs indicated severe hyponatremia and anemia requiring close monitoring and treatment."
+                ]
+            },
+            "Medications": [
+                "Lactulose",
+                "Carvedilol 6.25 mg oral Q12H",
+                "Thiamine 100 mg oral Q8H",
+                "Multivitamins",
+                "Folic Acid 1 mg oral daily",
+                "Vancomycin and Cefepime for suspected infection"
+            ],
+            "HospitalDischarge": "Discharged on 09/28/2024 with plans for follow-up on liver health and managing alcohol use disorder."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "13.18",
+                "BloodCulture": "Pending",
+                "Temperature": "97.6 \u00b0F",
+                "LowBloodPressure": "128/77",
+                "UnexplainedHypoxia": "Oxygen saturation 100%"
+            },
+            "ClinicalNotes": "The patient showed signs consistent with possible infection, required IV antibiotics, and had elevated WBCs."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "8.1",
+            "TransfusionEvents": "Transfusion indicated if hemoglobin drops below 7."
+        }
+    }
+]

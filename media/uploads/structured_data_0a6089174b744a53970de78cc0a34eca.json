@@ -1,0 +1,48 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Barbe L. Brown",
+                "Age": 75,
+                "MedicalHistory": [
+                    "Morbid obesity",
+                    "Coronary artery disease with stenting",
+                    "Type II diabetes mellitus",
+                    "Peripheral vascular disease",
+                    "Prior DVT",
+                    "History of myocardial infarction",
+                    "History of stroke",
+                    "Fibromyalgia",
+                    "Chronic back pain"
+                ],
+                "HospitalCourse": [
+                    "Patient found unresponsive at home by her husband on 02/22/2025.",
+                    "EMS initiated CPR and intubation; epinephrine was administered multiple times.",
+                    "Arrived at the hospital in asystole and was pronounced dead at 2241 after resuscitation efforts were unsuccessful."
+                ]
+            },
+            "Medications": [
+                "Epinephrine 1 mg IV",
+                "Amiodarone 300 mg IV",
+                "Sodium bicarbonate 50 mEq IV",
+                "Calcium chloride 1 g IV",
+                "Alteplase 50 mg IV"
+            ],
+            "HospitalDischarge": "Deceased on 02/22/2025 due to cardiac arrest and asystole."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "18.3 K/uL (elevated)",
+                "BloodCulture": "No growth at 18-24 hours",
+                "Temperature": "Not documented",
+                "LowBloodPressure": "140/114 at triage",
+                "UnexplainedHypoxia": "Not available"
+            },
+            "ClinicalNotes": "No evidence of sepsis; patient died from cardiorespiratory arrest following advanced cardiac life support."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "11.0 g/dL (low)",
+            "TransfusionEvents": "No blood transfusion administered during this encounter."
+        }
+    }
+]

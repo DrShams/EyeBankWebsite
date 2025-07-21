@@ -1,0 +1,49 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Marjorie R. Ellis",
+                "Age": 68,
+                "MedicalHistory": [
+                    "MASH Cirrhosis",
+                    "Hypertension",
+                    "Generalized Anxiety Disorder (GAD)",
+                    "Major Depressive Disorder (MDD)",
+                    "Obesity",
+                    "Chronic Lymphedema"
+                ],
+                "HospitalCourse": [
+                    "Patient presented with altered mental status secondary to sepsis.",
+                    "Hospital course complicated by Enterobacter cloacae UTI, acute respiratory failure, acute metabolic encephalopathy, and malnutrition.",
+                    "DNR-CC code status was established during hospitalization, and the patient passed away on 10/13/2024."
+                ]
+            },
+            "Medications": [
+                "Cefepime",
+                "Vancomycin",
+                "Meropenem",
+                "Lactulose",
+                "Rifaximin",
+                "Sertraline",
+                "Levothyroxine",
+                "Tamsulosin",
+                "Spironolactone"
+            ],
+            "HospitalDischarge": "Expired on 10/13/2024 due to complications of sepsis."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "2.97 (L)",
+                "BloodCulture": "Negative (initially, pending results for follow-ups)",
+                "Temperature": "Fever spikes noted during hospital stay",
+                "LowBloodPressure": "Documented with readings exhibiting hypotension",
+                "UnexplainedHypoxia": "O2 saturation declined to high 80s and improved with supplemental oxygen"
+            },
+            "ClinicalNotes": "Sepsis likely due to multifactorial causes including UTI and pneumonia, contributing to acute decompensated cirrhosis."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "Lowest of 6.2",
+            "TransfusionEvents": "Blood transfusion considered but not documented as administered during this encounter."
+        }
+    }
+]

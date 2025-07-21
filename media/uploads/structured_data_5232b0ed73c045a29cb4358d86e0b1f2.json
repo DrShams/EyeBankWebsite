@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Heart failure",
+                    "Bipolar disorder",
+                    "Diabetes mellitus",
+                    "History of C. difficile infection"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI and cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention (PCI) and subsequent Impella insertion and removal.",
+                    "Remains critically ill with ongoing mechanical ventilation, acute kidney injury, and fluctuating neurological status."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV",
+                "Milrinone IV",
+                "Insulin",
+                "Furosemide",
+                "Piperacillin-tazobactam",
+                "Ticagrelor",
+                "Aspirin"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after complex hospital course with guarded prognosis."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H)",
+                "BloodCulture": "Pending results",
+                "Temperature": "98.5 \u00b0F",
+                "LowBloodPressure": "Not recorded",
+                "UnexplainedHypoxia": "Desaturation during supine positioning"
+            },
+            "ClinicalNotes": "Fever and leukocytosis noted, ongoing monitoring for potential infection during hospital stay."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "7.4 (L) on 10/03/2024",
+            "TransfusionEvents": "Patient transfused 1 unit of packed red blood cells due to anemia."
+        }
+    }
+]

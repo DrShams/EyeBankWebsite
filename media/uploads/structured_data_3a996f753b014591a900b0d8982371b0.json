@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "History of bipolar disorder",
+                    "History of diabetes mellitus",
+                    "History of C. difficile infection",
+                    "Hypertension"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent emergency percutaneous coronary intervention (PCI) on 09/19/2024.",
+                    "Status post Impella insertion on 09/21/2024, removed on 09/27/2024.",
+                    "Intubated and on mechanical ventilation due to respiratory failure.",
+                    "DNR status established."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV for rhythm control",
+                "Milrinone IV for heart failure management",
+                "Insulin for blood sugar control",
+                "Piperacillin-tazobactam IV for infection",
+                "Dual antiplatelet therapy with aspirin and ticagrelor"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024, prognosis guarded."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H) on 10/04/2024",
+                "BloodCulture": "Negative so far, cultures pending.",
+                "Temperature": "Not documented",
+                "LowBloodPressure": "Occasional hypotension noted.",
+                "UnexplainedHypoxia": "Desaturation noted when laid supine."
+            },
+            "ClinicalNotes": "Concerns for sepsis due to leukocytosis; no organism isolated."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 (L) on 10/04/2024, requiring transfusion support.",
+            "TransfusionEvents": "Transfusion of packed red blood cells initiated to maintain hemoglobin above 8."
+        }
+    }
+]

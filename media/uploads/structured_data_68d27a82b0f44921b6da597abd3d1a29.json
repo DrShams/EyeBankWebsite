@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "History of bipolar disorder",
+                    "Diabetes mellitus",
+                    "Hypertension",
+                    "Sepsis"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent emergent percutaneous coronary intervention on 09/19/2024.",
+                    "Impella device inserted on 09/21/2024 and removed on 09/27/2024.",
+                    "Discharged on 10/05/2024."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV",
+                "Ticagrelor 90 mg twice daily",
+                "Aspirin 81 mg daily",
+                "Milrinone IV",
+                "Furosemide IV",
+                "Insulin"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 with ongoing monitoring for heart failure management."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (high)",
+                "BloodCulture": "No organism isolated",
+                "Temperature": "Not specified but noted fevers",
+                "LowBloodPressure": "MAP maintained above 60 with vasopressors",
+                "UnexplainedHypoxia": "Adjusted FiO2 as needed"
+            },
+            "ClinicalNotes": "Patient developed leukocytosis and fevers during hospitalization, suggesting possible sepsis."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 g/dL (low)",
+            "TransfusionEvents": "Transfusion of packed red blood cells required to maintain hemoglobin in the setting of heart disease."
+        }
+    }
+]

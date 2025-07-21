@@ -1,0 +1,50 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Acute systolic heart failure",
+                    "NSTEMI",
+                    "History of myocardial infarction",
+                    "Diabetes mellitus",
+                    "Bipolar disorder",
+                    "C. difficile infection",
+                    "Hypertension",
+                    "Chronic anticoagulation",
+                    "History of chronic low back pain"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention with stent placement on 09/21/2024.",
+                    "Impella device inserted on 09/21/2024, removed on 09/27/2024.",
+                    "Re-intubated on 09/28/2024 due to poor secretion management.",
+                    "Family discussions regarding goals of care due to guarded prognosis."
+                ]
+            },
+            "Medications": [
+                "Aspirin 81 mg daily",
+                "Ticagrelor 90 mg twice daily",
+                "Amiodarone IV",
+                "Milrinone IV",
+                "Insulin glargine 38 units daily"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 with ongoing critical care needs."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H)",
+                "BloodCulture": "No organism isolated on current cultures, MRSA PCR negative.",
+                "Temperature": "Not documented",
+                "LowBloodPressure": "MAP maintained by vasopressors.",
+                "UnexplainedHypoxia": "Desaturation noted when laid flat."
+            },
+            "ClinicalNotes": "Fever and leukocytosis noted with ongoing monitoring for sepsis without a known source."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "7.4 (L), 9.0 on 10/04/2024",
+            "TransfusionEvents": "Blood transfusion administered to maintain hemoglobin above 8."
+        }
+    }
+]

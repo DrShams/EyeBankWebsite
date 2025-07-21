@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Type 1 diabetes mellitus",
+                    "History of bipolar disorder",
+                    "Chronic low back pain",
+                    "C. difficile infection"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 with NSTEMI complicated by cardiogenic shock.",
+                    "Underwent percutaneous coronary intervention on 09/19/2024.",
+                    "Impella inserted on 09/21/2024; removed on 09/27/2024.",
+                    "Extubated on 09/28/2024 then re-intubated the same day due to poor secretion management.",
+                    "Current status critically ill, intubated, with ongoing support and severe weakness."
+                ]
+            },
+            "Medications": [
+                "Dual antiplatelet therapy: Aspirin 81 mg daily, Ticagrelor 90 mg twice daily",
+                "IV Amiodarone for atrial fibrillation",
+                "Milrinone IV infusion for cardiac support",
+                "Insulin for blood sugar control"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 but with a grim prognosis."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (high)",
+                "BloodCulture": "Current cultures negative",
+                "Temperature": "98.4 \u00b0F",
+                "LowBloodPressure": "BP 120/57",
+                "UnexplainedHypoxia": "Sustained oxygen levels above 90% with ventilation, but struggled with spontaneous breathing trials."
+            },
+            "ClinicalNotes": "Signs of possible infection indicated by leukocytosis and new fevers, but cultures remain unyielding for specific pathogens."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.4 (low), previously 7.4 (low) at one point during hospitalization.",
+            "TransfusionEvents": "Patient received blood transfusions to maintain hemoglobin above 8 in light of cardiac disease."
+        }
+    }
+]

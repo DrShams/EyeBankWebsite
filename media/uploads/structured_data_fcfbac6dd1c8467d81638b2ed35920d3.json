@@ -1,0 +1,49 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "History of percutaneous coronary intervention",
+                    "Diabetes mellitus",
+                    "History of bipolar disorder",
+                    "Gastroesophageal reflux disease",
+                    "Chronic anticoagulation"
+                ],
+                "HospitalCourse": [
+                    "Admitted to the intensive care unit due to NSTEMI complicated by cardiogenic shock on 09/19/2024.",
+                    "Underwent emergency PTCA with stent placement and subsequent Impella insertion.",
+                    "Complicated by respiratory failure requiring intubation and mechanical ventilation.",
+                    "Extubated and re-intubated due to poor secretion management.",
+                    "Underwent multiple assessments for cardiac management and infection control."
+                ]
+            },
+            "Medications": [
+                "IV amiodarone",
+                "Milrinone infusion",
+                "Dual antiplatelet therapy with aspirin and ticagrelor",
+                "Insulin for blood glucose management",
+                "IV antibiotics including Zosyn",
+                "Furosemide for diuresis"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after improvement but with ongoing care needs."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H) on 10/04/2024",
+                "BloodCulture": "Negative results on current cultures",
+                "Temperature": "98.4 \u00b0F on 10/04/2024",
+                "LowBloodPressure": "BP 120/57 on 10/04/2024",
+                "UnexplainedHypoxia": "Desaturation noted when laying flat."
+            },
+            "ClinicalNotes": "Developed fevers and leukocytosis concerning for infection without a known source."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 (L) on 10/04/2024",
+            "TransfusionEvents": "Transfused one unit of packed cells to maintain hemoglobin above 8 g/dL."
+        }
+    }
+]

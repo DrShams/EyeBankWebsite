@@ -1,0 +1,49 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Marjorie R. Ellis",
+                "Age": 68,
+                "MedicalHistory": [
+                    "MASH Cirrhosis",
+                    "Hypertension",
+                    "Generalized Anxiety Disorder (GAD)",
+                    "Major Depressive Disorder (MDD)",
+                    "Obesity",
+                    "Recurrent Urinary Tract Infections (UTIs)",
+                    "Altered Mental Status"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 10/01/2024 from Holzer with altered mental status.",
+                    "Diagnosed with sepsis secondary to multi-drug resistant urinary tract infection and hospital-acquired pneumonia.",
+                    "Course complicated by persistent acute multifactorial metabolic encephalopathy, volume overload, malnutrition, and acute respiratory failure.",
+                    "Patient transitioned to DNR-CC and expired on 10/13/2024."
+                ]
+            },
+            "Medications": [
+                "Cefepime",
+                "Vancomycin",
+                "Meropenem",
+                "Lactulose",
+                "Rifaximin",
+                "Levothyroxine",
+                "Sertraline"
+            ],
+            "HospitalDischarge": "Expired on 10/13/2024 due to complications related to sepsis and acute respiratory failure."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "2.97",
+                "BloodCulture": "Enterobacter cloacae detected",
+                "Temperature": "Febrile to 101.4\u00b0F",
+                "LowBloodPressure": "Observed hypotension",
+                "UnexplainedHypoxia": "Tachypneic to 40s"
+            },
+            "ClinicalNotes": "Patient met criteria for sepsis with elevated lactate, altered mental status, and significant co-morbidities contributing to decline."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "Had hemoglobin levels as low as 6.2",
+            "TransfusionEvents": "No blood transfusions documented during this hospitalization."
+        }
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Jeffrey Cochran",
+                "Age": 59,
+                "MedicalHistory": [
+                    "Sepsis",
+                    "Abscess of lower lobe of right lung with pneumonia",
+                    "Empyema lung",
+                    "Head and neck cancer",
+                    "Essential hypertension",
+                    "Other specified hypothyroidism",
+                    "Severe protein-energy malnutrition"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/16/2024 for shortness of breath.",
+                    "Underwent right thoracotomy, decortication, and right lower lobectomy on 09/17/2024.",
+                    "Progressed to improve post-surgery but experienced ongoing complications related to sepsis and empyema."
+                ]
+            },
+            "Medications": [
+                "Unasyn (ampicillin/sulbactam) IV",
+                "Levothyroxine 50 mcg oral daily",
+                "Lisinopril 10 mg oral daily",
+                "Vitamin E 90 mg oral daily",
+                "Norco 7.5 mg as needed for pain"
+            ],
+            "HospitalDischarge": "Discharged on 10/15/2024."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "16.8 (high)",
+                "BloodCulture": "Pending results from operative culture",
+                "Temperature": "Afebrile upon exam",
+                "LowBloodPressure": "BP recorded at 100/75",
+                "UnexplainedHypoxia": "Reported O2 saturation at 95%"
+            },
+            "ClinicalNotes": "Patient diagnosed with sepsis secondary to lung abscess and empyema. Underwent surgical intervention and responded well to treatment."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.5 (low)",
+            "TransfusionEvents": "No blood transfusions administered during this encounter."
+        }
+    }
+]

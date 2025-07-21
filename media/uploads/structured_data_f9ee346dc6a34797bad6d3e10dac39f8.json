@@ -1,0 +1,46 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Jeffrey Cochran",
+                "Age": 59,
+                "MedicalHistory": [
+                    "Head and neck cancer",
+                    "Essential hypertension",
+                    "Other specified hypothyroidism",
+                    "Severe protein-energy malnutrition",
+                    "Smoking history"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/16/2024 for shortness of breath and fatigue.",
+                    "Underwent right thoracotomy, decortication, and right lower lobectomy on 09/17/2024 for empyema and pneumonia.",
+                    "Chest tubes were placed due to fluid drainage.",
+                    "Postoperative period marked by complications such as sepsis and ongoing management of empyema."
+                ]
+            },
+            "Medications": [
+                "Unasyn (Ampicillin-sulbactam)",
+                "Levofloxacin (noted prior to admission)",
+                "Levothyroxine",
+                "Lisinopril",
+                "Vitamin E",
+                "Lactulose as needed"
+            ],
+            "HospitalDischarge": "Discharged on 10/15/2024 after recovery from surgical procedure and stabilization."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "16.8 (H)",
+                "BloodCulture": "Pending",
+                "Temperature": "Afebrile",
+                "LowBloodPressure": "Stable at discharge",
+                "UnexplainedHypoxia": "Noted oxygen saturation of 97%"
+            },
+            "ClinicalNotes": "Sepsis was diagnosed during hospitalization; blood cultures indicated infection, and a treatment plan was established."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.5 (L)",
+            "TransfusionEvents": "No blood transfusion administered during this encounter."
+        }
+    }
+]

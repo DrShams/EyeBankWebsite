@@ -1,0 +1,52 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Kelly Varvel",
+                "Age": 62,
+                "MedicalHistory": [
+                    "Anemia",
+                    "Arrhythmia",
+                    "Morbid obesity",
+                    "Hypertension",
+                    "Coronary artery disease",
+                    "Diabetes mellitus",
+                    "Chronic systolic congestive heart failure",
+                    "Deep venous thrombosis",
+                    "Pulmonary embolism",
+                    "Cellulitis",
+                    "Peripheral artery disease",
+                    "Atrial fibrillation"
+                ],
+                "HospitalCourse": [
+                    "Patient presented to Greene Memorial emergency department on 4/3/2025 with generalized weakness and fatigue.",
+                    "Noted to have elevated lactic acid and acute kidney injury.",
+                    "Initially treated for suspected sepsis due to urinary tract infection.",
+                    "Condition deteriorated and was transferred to ICU, where lactic acidosis and cardiogenic shock were documented.",
+                    "Family elected for comfort care after discussing prognosis."
+                ]
+            },
+            "Medications": [
+                "Vancomycin 1000 mg IV",
+                "Piperacillin-tazobactam 4.5 g IV",
+                "Amiodarone as needed",
+                "Levophed for hypotension"
+            ],
+            "HospitalDischarge": "Expired on 4/5/2025 due to septic shock and multiple organ failure."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "8,100",
+                "BloodCulture": "No growth at 72 hours",
+                "Temperature": "98 \u00b0F",
+                "LowBloodPressure": "BP recorded as 89/59 mmHg",
+                "UnexplainedHypoxia": "Oxygen saturation at 100% on room air initially"
+            },
+            "ClinicalNotes": "Patient's clinical presentation indicated septic shock secondary to Klebsiella UTI, confirmed by urine culture."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "11.2 g/dL initially recorded; further drops noted.",
+            "TransfusionEvents": "Blood transfusion not documented; supportive measures were utilized."
+        }
+    }
+]

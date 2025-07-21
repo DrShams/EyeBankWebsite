@@ -1,0 +1,48 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Acute myocardial infarction",
+                    "Cardiogenic shock",
+                    "Bipolar disorder",
+                    "Diabetes mellitus",
+                    "History of C. difficile infection"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent multiple percutaneous coronary interventions.",
+                    "Placed on mechanical ventilation and developed pressure injuries.",
+                    "Family chose DNR status as prognosis remained guarded."
+                ]
+            },
+            "Medications": [
+                "Amiodarone IV",
+                "Milrinone IV",
+                "Ticagrelor oral",
+                "Aspirin oral",
+                "Insulin glargine",
+                "Furosemide IV",
+                "Zosyn IV"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024 after a prolonged ICU stay."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2",
+                "BloodCulture": "Pending",
+                "Temperature": "Fever noted",
+                "LowBloodPressure": "Occasional hypotension observed",
+                "UnexplainedHypoxia": "Documented; patient desaturated when supine"
+            },
+            "ClinicalNotes": "Patient developed leukocytosis and fever, concerning for sepsis, with negative cultures."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0",
+            "TransfusionEvents": "At least one blood transfusion administered during hospitalization."
+        }
+    }
+]

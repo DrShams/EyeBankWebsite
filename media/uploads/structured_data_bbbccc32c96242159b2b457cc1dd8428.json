@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Daniel L Hurst",
+                "Age": 55,
+                "MedicalHistory": [
+                    "End-stage renal disease on dialysis",
+                    "Congestive heart failure",
+                    "Aortic stenosis",
+                    "Diabetes mellitus type 2, uncontrolled",
+                    "Chronic obstructive pulmonary disease",
+                    "Morbid obesity",
+                    "Paroxysmal atrial fibrillation",
+                    "Recurrent major depressive disorder"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 03/12/2025 with shortness of breath and volume overload.",
+                    "Diagnosed with NSTEMI during hospitalization with elevated troponin levels.",
+                    "Patient showed signs of fluid overload due to missed dialysis sessions.",
+                    "Cardiac catheterization planned but canceled due to elevated potassium."
+                ]
+            },
+            "Medications": [
+                "Aspirin 81 mg daily",
+                "Heparin drip",
+                "Insulin lispro as needed",
+                "Furosemide 60 mg IV every 8 hours"
+            ],
+            "HospitalDischarge": "Deceased on 03/14/2025 after cardiac arrest."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "11.9",
+                "BloodCulture": "Not mentioned",
+                "Temperature": "Not documented",
+                "LowBloodPressure": "Recorded as 87/77",
+                "UnexplainedHypoxia": "Oxygen saturation noted as low"
+            },
+            "ClinicalNotes": "There were no indications of sepsis; primary issues related to fluid overload and heart failure."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.9",
+            "TransfusionEvents": "No blood transfusion administered during this encounter."
+        }
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Jeffrey Cochran",
+                "Age": 59,
+                "MedicalHistory": [
+                    "Head and neck cancer",
+                    "Essential hypertension",
+                    "Other specified hypothyroidism",
+                    "Severe protein-energy malnutrition",
+                    "History of smoking"
+                ],
+                "HospitalCourse": [
+                    "Admitted to Adena Regional Medical Center for shortness of breath on 09/16/2024.",
+                    "Underwent right thoracotomy, right lung decortication, and right lower lobectomy on 09/17/2024.",
+                    "Diagnosed with empyema, pneumonia, and sepsis during hospitalization."
+                ]
+            },
+            "Medications": [
+                "Unasyn IV",
+                "Lisinopril 10 mg",
+                "Levothyroxine 50 mcg",
+                "Lactulose as needed",
+                "Norco 7.5 mg for pain"
+            ],
+            "HospitalDischarge": "Discharged on 10/15/2024 after treatment for empyema and pneumonia."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "16.8",
+                "BloodCulture": "Pending results, previous cultures showed GPC.",
+                "Temperature": "Afebrile",
+                "LowBloodPressure": "Not recorded during significant crisis",
+                "UnexplainedHypoxia": "Not mentioned"
+            },
+            "ClinicalNotes": "Sepsis diagnosis confirmed. Patient responded to antibiotic therapy and clinical management."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.5",
+            "TransfusionEvents": "No blood transfusion administered during this encounter."
+        }
+    }
+]

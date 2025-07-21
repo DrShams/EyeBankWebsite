@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary Artery Disease",
+                    "Myocardial Infarction in April 2024",
+                    "Bipolar Disorder",
+                    "Type 1 Diabetes Mellitus",
+                    "Hypertension",
+                    "Chronic Low Back Pain",
+                    "History of Clostridium difficile",
+                    "Irritable Bowel Syndrome"
+                ],
+                "HospitalCourse": [
+                    "Admitted to MVH on 09/19/2024 for NSTEMI and cardiogenic shock.",
+                    "Underwent multiple PCI procedures and impella insertion on 09/21/2024.",
+                    "Extubated on 09/28/2024 but required re-intubation for airway protection.",
+                    "Family discussions regarding goals of care, transitioned to DNR status."
+                ]
+            },
+            "Medications": [
+                "IV Amiodarone for A-fib",
+                "Milrinone to augment cardiac output",
+                "Insulin for blood sugar control",
+                "Zosyn for infection management"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (H) on 10/04/2024",
+                "BloodCulture": "Sent for testing, results pending.",
+                "Temperature": "Max 99.8 \u00b0F (37.7 \u00b0C) recorded",
+                "LowBloodPressure": "BP 106/52 noted",
+                "UnexplainedHypoxia": "Desaturations when laid flat"
+            },
+            "ClinicalNotes": "Fever and leukocytosis concerning for infection. Cultures negative so far."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "7.4 (L) on 10/02/2024; transfusion indicated.",
+            "TransfusionEvents": "Transfused packed cells to maintain hemoglobin greater than 8."
+        }
+    }
+]

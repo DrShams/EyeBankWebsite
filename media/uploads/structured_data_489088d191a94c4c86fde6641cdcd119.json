@@ -1,0 +1,51 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Joanna Sprague",
+                "Age": 70,
+                "MedicalHistory": [
+                    "Coronary artery disease",
+                    "Myocardial infarction",
+                    "Cardiogenic shock",
+                    "Diabetes mellitus",
+                    "C. difficile infection",
+                    "Bipolar disorder"
+                ],
+                "HospitalCourse": [
+                    "Admitted on 09/19/2024 for NSTEMI complicated by cardiogenic shock.",
+                    "Underwent multiple percutaneous coronary interventions.",
+                    "Extubated on 09/28/2024 and re-intubated on the same day.",
+                    "Developed fevers and leukocytosis, concerning for infection without a known source."
+                ]
+            },
+            "Medications": [
+                "Amiodarone",
+                "Milrinone",
+                "Dapagliflozin",
+                "Spironolactone",
+                "Insulin glargine",
+                "Ticagrelor",
+                "Aspirin",
+                "Zosyn",
+                "Levophed",
+                "Midodrine"
+            ],
+            "HospitalDischarge": "Discharged on 10/05/2024, condition improved but prognosis remains guarded."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "17.2 (high)",
+                "BloodCulture": "No organism isolated",
+                "Temperature": "99.8 \u00b0F",
+                "LowBloodPressure": "Occasional hypotension noted",
+                "UnexplainedHypoxia": "Desaturation events noted during MRI attempts"
+            },
+            "ClinicalNotes": "Fever and leukocytosis without a known source; empiric antibiotics continued pending culture results."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "9.0 g/dL (low)",
+            "TransfusionEvents": "Blood transfusions administered to maintain hemoglobin levels above 8 g/dL due to cardiac disease."
+        }
+    }
+]

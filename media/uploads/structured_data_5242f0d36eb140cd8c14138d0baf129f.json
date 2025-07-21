@@ -1,0 +1,47 @@
+[
+    {
+        "ElectronicMedicalRecords": {
+            "PatientDetails": {
+                "Name": "Jeffrey Cochran",
+                "Age": 59,
+                "MedicalHistory": [
+                    "Emphysema",
+                    "Head and neck cancer (2019)",
+                    "Smoking",
+                    "Metastatic tonsil squamous cell carcinoma",
+                    "Hypertension",
+                    "Hypothyroidism secondary to thyroid cancer/thyroidectomy",
+                    "Chronic constipation"
+                ],
+                "HospitalCourse": [
+                    "Admitted with pneumonia and empyema on 09/16/2024.",
+                    "Underwent bronchoscopy with aspiration and right thoracotomy on 09/17/2024.",
+                    "Experienced sepsis secondary to right lower lobe pneumonia.",
+                    "Notable for worsening leukocytosis, started on IV antibiotics and transitioned to PO antibiotics.",
+                    "Discharged on 10/15/2024."
+                ]
+            },
+            "Medications": [
+                "Vancomycin 1,250 mg IV q12h",
+                "Meropenem 1 g IV Q8H",
+                "Tolvaptan 15 mg",
+                "Iron and B12 supplements"
+            ],
+            "HospitalDischarge": "Discharged on 10/15/2024 after stabilization."
+        },
+        "Sepsis": {
+            "InfectionIndicators": {
+                "WBC": "Initially at 26.4, rose to 30.4 on 10/02/2024",
+                "BloodCulture": "Normal respiratory flora, operative culture positive for GPC",
+                "Temperature": "Consistently within normal range",
+                "LowBloodPressure": "No records of hypotension noted",
+                "UnexplainedHypoxia": "Oxygen saturation fluctuated, required supplemental oxygen"
+            },
+            "ClinicalNotes": "Sepsis was present at admission and managed appropriately. Worsening leukocytosis was observed."
+        },
+        "BloodProducts": {
+            "HemoglobinLevels": "Lowest recorded Hgb of 8.1, transfusions implemented if Hgb <7.",
+            "TransfusionEvents": "1 unit of PRBCs transfused on 10/02/2024."
+        }
+    }
+]
