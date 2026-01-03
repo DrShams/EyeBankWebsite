@@ -5,71 +5,77 @@ previous
 4.	I want you to provide a medical records, sepsis and blood transfusion data in this file in a json format
 the structure should be exactly the same:
 
+{
+  "DonorScreeningCase": {
+    "Source": "Latest Donor Assessment Results",
+    "medical_records": {
+      "PatientName": "Becky K. Carter",
+      "DOB": "1954-04-05",
+      "MRN": "099-77-37-48",
+      "AdmissionDate": "2025-10-02",
+      "DischargeDate": "2025-10-06",
+      "EncounterDate": "2025-10-02",
+      "ChiefComplaint": "Generalized weakness",
+      "MedicalHistory": [
+        "Acute respiratory failure with hypoxia",
+        "CVA in 2020",
+        "Atrial fibrillation",
+        "Anxiety",
+        "Depression",
+        "Arthritis",
+        "Type 2 diabetes on insulin",
+        "COPD",
+        "GERD",
+        "Hyperlipidemia",
+        "Hypertension",
+        "Hypothyroidism",
+        "Sleep apnea",
+        "Cirrhosis",
+        "Cholangiocarcinoma status post Y90 therapy",
+        "Mild cognitive impairment",
+        "Chronic grade 1 diastolic heart failure"
+      ]
+    },
+    "sepsis": {
+      "VitalSigns": {
+        "Temp_F": 98.2,
+        "BP": "106/64",
+        "Pulse": 194,
+        "RespiratoryRate": 16,
+        "SpO2_percent": 85
+      },
+      "Labs": {
+        "WBC": 26.5,
+        "Hemoglobin": 7.8,
+        "Glucose": 136,
+        "Potassium": 3.9,
+        "INR": 2.3,
+        "Procalcitonin": 0.38
+      },
+      "Diagnosis": "Multifocal pneumonia, acute hypoxic respiratory failure, possible sepsis",
+      "Management": [
+        "Initiated broad-spectrum antibiotics",
+        "Fluid resuscitation",
+        "Monitoring of vital signs and laboratory values"
+      ]
+    },
+    "blood_transfusion": {
+      "TransfusionDate": "2025-10-02",
+      "UnitsTransfused": 2,
+      "ReasonForTransfusion": "Severe anemia with hemoglobin of 5.8, requiring correction",
+      "PostTransfusionHemoglobin": 8.1,
+      "TransfusionReaction": "None reported"
+    },
 
-[
-    {
-        "electronic_medical_records": {
-          "patient_details": {
-            "name": "Joanna Sprague",
-            "age": 70,
-            "medical_history": [
-              "CAD (Coronary Artery Disease)",
-              "MI (Myocardial Infarction) in April 2024",
-              "NSTEMI complicated by cardiogenic shock",
-              "LVEF 20-25%",
-              "Acute systolic heart failure",
-              "Diabetes mellitus",
-              "History of bipolar disorder"
-            ],
-            "hospital_course": [
-              "Admitted on 09/19/2024",
-              "Underwent PCI (Percutaneous Coronary Intervention)",
-              "Impella device inserted on 09/21/2024 and removed on 09/27/2024",
-              "Remained intubated with mechanical ventilatory support",
-              "Discharged on 10/05/2024"
-            ]
-          },
-          "medications": [
-            "Amiodarone (IV drip)",
-            "Primacor (Milrinone) drip",
-            "Dual antiplatelet therapy (Aspirin 81 mg and Ticagrelor 90 mg)",
-            "Spironolactone 12.5 mg daily",
-            "Insulin drip",
-            "Zosyn (Antibiotic for infection)",
-            "Midodrine for blood pressure support"
-          ],
-          "hospital_discharge": "Discharged on 10/05/2024 after complications with cardiogenic shock and respiratory failure"
-        },
-        "sepsis": {
-          "cause": "Sepsis due to suspected infection without a clear source",
-          "complications": [
-            "Fevers and leukocytosis",
-            "No organism isolated in current cultures",
-            "MRSA PCR negative",
-            "Candida in urine (likely contaminant)"
-          ],
-          "treatment": [
-            "Antibiotics (Zosyn)",
-            "Mechanical ventilation",
-            "Monitored for leukocytosis (WBC 17.2)",
-            "Continued fluid management"
-          ],
-          "status": "Infection source not fully identified but treated with broad-spectrum antibiotics"
-        },
-        "blood_transfusion": {
-          "reason": "Normocytic anemia due to critical illness",
-          "hemoglobin_levels": [
-            {"date": "09/30/2024", "value": "8.8 g/dL"},
-            {"date": "10/02/2024", "value": "7.7 g/dL"},
-            {"date": "10/03/2024", "value": "7.4 g/dL"}
-          ],
-          "transfusions": [
-            {
-              "date": "10/03/2024",
-              "amount": "1 unit of packed cells",
-              "target_hemoglobin": "> 8 g/dL due to cardiac disease"
-            }
-          ]
-        }
-      }            
-]
+    "AutoScreening": {
+      "DonorExclusionCriteriaFile": "donor_exclusion_criteria_v1.json",
+      "MatchedRuleOutConditions": [],
+      "MatchedFlagForFurtherInvestigationConditions": [
+        "Cirrhosis"
+      ],
+      "Decision": "Not Acceptable – Needs Further Investigation",
+      "DecisionCategory": "NeedsFurtherInvestigation",
+      "Explanation": "Cirrhosis is present in the medical history and is listed under FlagForFurtherInvestigation conditions."
+    }
+  }
+}
